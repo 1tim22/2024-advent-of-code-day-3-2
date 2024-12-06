@@ -10,5 +10,12 @@ fn test_parse_and_multiplication() {
 
     let total = process(table);
 
-    assert_eq!(total, 175015740);
+    // That's not the right answer; your answer is too low.
+    assert_ne!(total, 56372201);
+
+    // That's not the right answer; your answer is too high.
+    assert_ne!(total, 175015740);
+
+    // That's the right answer! You are one gold star closer to finding the Chief Historian.
+    assert_eq!(total, 112272912);
 }
